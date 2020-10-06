@@ -1,0 +1,45 @@
+Installing and running WordPress; Installing and running WordPress Shared Hosting
+
+FLYWHEEL - is a hosting company
+LOCAL - is a tool offered by FLYWHEEL to make developing sites locally and deploying them to FLYWHEEL hosting easy.
+
+WordPress needs an environment with three main components:
+    - database (MySQL)
+    - web hosting env (Apache or NGINX)
+    - Application language - php support
+
+When you create a new site under LOCAL, you create a new container, a virtual computer with it's own MySQL, Apache or
+NGINX, and php setup.
+
+That means each site is fully separate and can have it's own custom hosting configurations.
+
+FLYWHEEL handles the process of setting up and maintaining these containers is done automatically by the app.
+    - You just set how you want your env configured and site to function
+
+local.getflywheel.com (https://localwp.com/)
+
+When you're devloping on a computer you need to have a top-level domain that will never happen on the web, it's
+reserved for local development. Two recommended and most common are .local and .test
+
+Once you walk through the config settings, LOCAL will create the container for your project with the selected
+configurations, additionally, it installs wordpress and spins everything out. It can take a little while.
+
+Once finished, Local spins up the site and starts all the servers
+
+Now that Local is installed, you can create as many sites as you want BUT it's important to remember that every time
+a site is running live it runs it's own container and servers (so probably want to limit them running simultaneously)
+
+If you want to make changes to the db you can click on database/adminer to open the browser based db
+
+It is recommended anytime you create a new site to go to the SSL tab and enable the certificate by clicking trust...
+After that, it's recommended to use https:// to view site
+
+You can enable LiveLink so that you are able to share a temp. hosted server of your site for people to view
+(typically for development purposes). Important to note that when you don't need it to turn it off so that people aren't
+accessing a part of your unfinished development.
+
+To create a Blueprint of a website - just right-click on the website design title you want to make the template from
+and hit save.
+
+Can run WP-CLI from any project. Just right click and click SSH (secure shell) this open the WP-CLI
+To see what's available for WP-CLI go to: wp-cli.org

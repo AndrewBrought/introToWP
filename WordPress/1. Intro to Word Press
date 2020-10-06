@@ -1,0 +1,50 @@
+WordPress is a web publishing application
+
+We can use it to publish content onto the web.
+
+WordPress works as an interface between:
+    - You the content publisher
+    - A database and server where all that content is stored
+    - The visitor who accesses that content through their web browser.
+
+We can create different types of content including:
+    - posts
+    - pages
+    - media elements
+
+Each content has their own unique properties which can be extended through plugins and themes, and each can have
+comments associated with them
+
+When a new post, page or media item is created, a new entry is made in the WordPress database (MySQL) containing all
+the information associated with that item.
+    - title
+    - content
+    - author
+    - publishing date
+    -relationships and so on
+
+If media elements are uploaded like an image added to a post, the physical storage of an image along with its title,
+alt text, and other properties are stored in the db - the relationships are created to say 'this' image was originally
+uploaded to that post.
+
+Once a post, page, or media item is published, the data is accessed through url, WordPress receives the data from the
+db and populates the correct template for that type of content based on the chosen theme. The result is what
+the user will perceive as your website.
+
+$$$ In WordPress, when you publish content on the web, you're creating a database entry. When a visitor makes a
+ url request that to that content, the APPLICATION BUILDS A VIEW containing all the info, on the fly - what they
+ perceive as a webpage.  There is no page. Only the idea of a page realized when someone visits the url from a browser
+
+    -This means you can edit the content of any item at anytime, change the appearance of one piece of content or your
+    entire site - - without having to change the content itself.
+
+** WordPress separates content and content management from it's presentation, and gives you absolute control over every
+aspect.
+
+
+WordPress, the application, runs on a server alongside a database. Where that the server is (lives) is up to you or
+site administrator.
+
+Installing and running WordPress; Installing and running WordPress Shared Hosting
+
+
